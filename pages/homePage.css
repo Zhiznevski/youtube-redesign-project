@@ -15,9 +15,8 @@ html,
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
-  font-family: "muli", sans-serif;
+  font-family: 'Mulish', sans-serif;
   line-height: 1;
   font-size: 16px;
 }
@@ -90,7 +89,7 @@ h6 {
     background-color: #EBEBEB;
     border-radius: 20px;
     font-size: 1rem;
-    font-family: "muli", sans-serif;
+    font-family: "Mulish";
 }
 
 .search-form__icon {
@@ -128,4 +127,73 @@ h6 {
     font-size: 0.75rem;
     background-color: #FF0000;
     color: #fff;
+}
+
+/* Main */
+
+.main-container {
+  display: flex;
+  padding: 0 0 0 30px;
+  gap: 66px;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+}
+
+.main-navigation {
+
+}
+
+.main-navigation__list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.main-navigation__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.main-navigation__item:first-child {
+  color:#FF0000;
+}
+
+.navigation-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.navigation-menu__item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.subscriptions-menu__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.subscriptions-menu__title {
+  font-size: 1.13rem;
+  font-weight: 700;
+}
+
+.subscriptions-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.subscriptions-menu__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
