@@ -51,11 +51,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">
-                            <img src="./assets/header/Userpic.svg" alt="navigation-icon">
-                        </a>
                     </li>
-                 </ul>
+                </ul>
+                <div class="header__profile-image">  
+                        <img class="header__profile-icon" src="./assets/header/Userpic.svg" alt="navigation-icon">
+                 </div>
                 </nav>
 
             </div>
@@ -63,7 +63,7 @@
     </header>
     <main class="main">
         <div class="main-container container">
-            <aside>
+            <aside class="aside-block">
                 <div class="aside-container">
                     <nav class="main-navigation">
                         <ul class="main-navigation__list">
@@ -146,6 +146,10 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="settings-container">
+                        <img class="settings-icon" src="./assets/aside/settings/settings.svg" alt="settings icon">
+                        <p class="settings-name">Setting</p>
+                    </div>
                 </div>
             </aside>
             <div class="main-catalog">
@@ -168,7 +172,6 @@
                         <div class="user-videos__card">
                             <div class="user-videos__video-container">
                                 <img class="user-videos__video-image" src="./assets/main/channel-section/video1.png" alt="user video">
-                                <div class="user-videos__video-time-background"></div>
                                 <div class="user-videos__video-time">4:15</div>
                             </div>
                             <h3 class="user-videos__video-title">A Brief History Of Creation</h3>
@@ -180,7 +183,6 @@
                         <div class="user-videos__card">
                             <div class="user-videos__video-container">
                                 <img class="user-videos__video-image" src="./assets/main/channel-section/video2.png" alt="user video">
-                                <div class="user-videos__video-time-background"></div>
                                 <div class="user-videos__video-time">8:00</div>
                             </div>
                             <h3 class="user-videos__video-title">Selecting The Right Hotel</h3>
@@ -192,7 +194,6 @@
                         <div class="user-videos__card">
                             <div class="user-videos__video-container">
                                 <img class="user-videos__video-image" src="./assets/main/channel-section/video3.png" alt="user video">
-                                <div class="user-videos__video-time-background"></div>
                                 <div class="user-videos__video-time">5:32</div>
                             </div>
                             <h3 class="user-videos__video-title">Asteroids</h3>
@@ -204,7 +205,6 @@
                         <div class="user-videos__card">
                             <div class="user-videos__video-container">
                                 <img class="user-videos__video-image" src="./assets/main/channel-section/video4.png" alt="user video">
-                                <div class="user-videos__video-time-background"></div>
                                 <div class="user-videos__video-time">6:40</div>
                             </div>
                             <h3 class="user-videos__video-title">Telescopes 101</h3>
@@ -216,7 +216,6 @@
                         <div class="user-videos__card">
                             <div class="user-videos__video-container">
                                 <img class="user-videos__video-image" src="./assets/main/channel-section/video5.png" alt="user video">
-                                <div class="user-videos__video-time-background"></div>
                                 <div class="user-videos__video-time">1:45</div>
                             </div>
                             <h3 class="user-videos__video-title">Medical Care Is Just</h3>
@@ -228,7 +227,6 @@
                         <div class="user-videos__card">
                             <div class="user-videos__video-container">
                                 <img class="user-videos__video-image" src="./assets/main/channel-section/video6.png" alt="user video">
-                                <div class="user-videos__video-time-background"></div>
                                 <div class="user-videos__video-time">2:12</div>
                             </div>
                             <h3 class="user-videos__video-title">Moon Gazing</h3>
@@ -290,19 +288,22 @@
                         </div>
                     </div>
                 </section>
-                <section class="user-videos">
+                <section class="user-videos channel-videos">
                     <div class="user-videos__header">
                         <div class="user-videos__profile-info">
                             <img class="user-videos__profile-icon" src="./assets/main/recommended-channel-section/channel-icon.svg" alt="profile-icon">
                             <h2 class="user-videos__title">Food & Drink</h2>
                             <p class="user-videos_annotation">Recommended channel for you</p>
                         </div>
-                        <div class="swiper-controls">
-                            <div class="swiper-arrow">
-                                <img src="./assets/main/swiper-arrows/Left.svg" alt="swiper left-arrow">
-                            </div>
-                            <div class="swiper-arrow">
-                                <img src="./assets/main/swiper-arrows/Right.svg" alt="swiper right-arrow">
+                        <div class="use-videos__subscrube-container">
+                            <button class="use-videos__subscrube-button">Subscribe 2.3m</button>
+                            <div class="channel-swiper">
+                                <div class="swiper-arrow">
+                                    <img src="./assets/main/swiper-arrows/Left.svg" alt="swiper left-arrow">
+                                </div>
+                                <div class="swiper-arrow">
+                                    <img src="./assets/main/swiper-arrows/Right.svg" alt="swiper right-arrow">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -310,73 +311,67 @@
                         <div class="user-videos__card">
                             <div class="user-videos__video-container">
                                 <img class="user-videos__video-image" src="./assets/main/recommended-channel-section/video.png" alt="user video">
-                                <div class="user-videos__video-time-background"></div>
-                                <div class="user-videos__video-time">4:15</div>
+                                <div class="user-videos__video-time">7:36</div>
                             </div>
-                            <h3 class="user-videos__video-title">A Brief History Of Creation</h3>
+                            <h3 class="user-videos__video-title">Astronomy Or Astrology</h3>
                             <div class="user-videos__info">
-                                <div class="user-videos__views-count">80k views  ·  3 days ago</div>
-                                <div class="user-videos__author">Dollie Blair</div>
+                                <div class="user-videos__views-count">240k views  ·  4 months ago</div>
+                                <div class="user-videos__author">Food & Drink</div>
                             </div>
                         </div>
                         <div class="user-videos__card">
                             <div class="user-videos__video-container">
                                 <img class="user-videos__video-image" src="./assets/main/recommended-channel-section/video1.png" alt="user video">
-                                <div class="user-videos__video-time-background"></div>
-                                <div class="user-videos__video-time">8:00</div>
+                                <div class="user-videos__video-time">2:19</div>
                             </div>
-                            <h3 class="user-videos__video-title">Selecting The Right Hotel</h3>
+                            <h3 class="user-videos__video-title">Advertising Outdoors</h3>
                             <div class="user-videos__info">
-                                <div class="user-videos__views-count">123k views  ·  1 months ago</div>
-                                <div class="user-videos__author">Dollie Blair</div>
+                                <div class="user-videos__views-count">13k views  ·  15 days ago</div>
+                                <div class="user-videos__author">Food & Drink</div>
                             </div>
                         </div>
                         <div class="user-videos__card">
                             <div class="user-videos__video-container">
                                 <img class="user-videos__video-image" src="./assets/main/recommended-channel-section/video2.png" alt="user video">
-                                <div class="user-videos__video-time-background"></div>
-                                <div class="user-videos__video-time">5:32</div>
+                                <div class="user-videos__video-time">9:05</div>
                             </div>
-                            <h3 class="user-videos__video-title">Asteroids</h3>
+                            <h3 class="user-videos__video-title">Radio Astronomy</h3>
                             <div class="user-videos__info">
-                                <div class="user-videos__views-count">43k views  ·  12 days ago</div>
-                                <div class="user-videos__author">Dollie Blair</div>
+                                <div class="user-videos__views-count">45k views  ·  2 months ago</div>
+                                <div class="user-videos__author">Food & Drink</div>
                             </div>
                         </div>
                         <div class="user-videos__card">
                             <div class="user-videos__video-container">
                                 <img class="user-videos__video-image" src="./assets/main/recommended-channel-section/video3.png" alt="user video">
-                                <div class="user-videos__video-time-background"></div>
-                                <div class="user-videos__video-time">6:40</div>
+                                <div class="user-videos__video-time">3:40</div>
                             </div>
-                            <h3 class="user-videos__video-title">Telescopes 101</h3>
+                            <h3 class="user-videos__video-title">A Good Autoresponder</h3>
                             <div class="user-videos__info">
                                 <div class="user-videos__views-count">43k views  ·  12 days ago</div>
-                                <div class="user-videos__author">Dollie Blair</div>
+                                <div class="user-videos__author">Food & Drink</div>
                             </div>
                         </div>
                         <div class="user-videos__card">
                             <div class="user-videos__video-container">
                                 <img class="user-videos__video-image" src="./assets/main/recommended-channel-section/video4.png" alt="user video">
-                                <div class="user-videos__video-time-background"></div>
-                                <div class="user-videos__video-time">1:45</div>
+                                <div class="user-videos__video-time">1:56</div>
                             </div>
-                            <h3 class="user-videos__video-title">Medical Care Is Just</h3>
+                            <h3 class="user-videos__video-title">Baby Monitor Technology</h3>
                             <div class="user-videos__info">
-                                <div class="user-videos__views-count">18k views  ·  2 days ago</div>
-                                <div class="user-videos__author">Dollie Blair</div>
+                                <div class="user-videos__views-count">86k views  ·  7 days ago</div>
+                                <div class="user-videos__author">Food & Drink</div>
                             </div>
                         </div>
                         <div class="user-videos__card">
                             <div class="user-videos__video-container">
                                 <img class="user-videos__video-image" src="./assets/main/recommended-channel-section/video5.png" alt="user video">
-                                <div class="user-videos__video-time-background"></div>
-                                <div class="user-videos__video-time">2:12</div>
+                                <div class="user-videos__video-time">4:15</div>
                             </div>
-                            <h3 class="user-videos__video-title">Moon Gazing</h3>
+                            <h3 class="user-videos__video-title">Asteroids</h3>
                             <div class="user-videos__info">
-                                <div class="user-videos__views-count">18k views  ·  2 days ago</div>
-                                <div class="user-videos__author">Dollie Blair</div>
+                                <div class="user-videos__views-count">123k views  ·  4 months ago</div>
+                                <div class="user-videos__author">Food & Drink</div>
                             </div>
                         </div>
                     </div>
@@ -384,5 +379,27 @@
             </div>
         </div>
     </main>
+    <nav class="mobile-menu">
+        <div class="mobile-menu__container">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <img class="mobile-menu__icon" src="./assets/aside/navigation/home.svg" alt="mobile-menu icon">
+                    <p class="mobile-menu__name">Home</p>
+                </li>
+                <li class="mobile-menu__item">
+                    <img class="mobile-menu__icon" src="./assets/aside/navigation/trending.svg" alt="mobile-menu icon">
+                    <p class="mobile-menu__name">Trending</p>
+                </li>
+                <li class="mobile-menu__item">
+                    <img class="mobile-menu__icon" src="./assets/aside/navigation/subscriptions.svg" alt="mobile-menu icon">
+                    <p class="mobile-menu__name">Subscriptions</p>
+                </li>
+                <li class="mobile-menu__item">
+                    <img class="mobile-menu__icon" src="./assets/aside/navigation/library.svg" alt="mobile-menu icon">
+                    <p class="mobile-menu__name">Library</p>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </body>
 </html>

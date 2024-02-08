@@ -104,12 +104,49 @@ h6 {
     flex: 0 1 765px;
     justify-content: flex-end;
 }
-
+.header__navigation {
+  display: flex;
+}
 .nav-list {
     display: flex;
     align-items: center;
     gap: 50px;
 }
+.nav-link {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@media (max-width: 576px) { 
+  .header-container {
+    max-width: 320px;
+    padding: 12px 16px 20px 16px;
+}
+  .burger-menu {
+    display: none;
+  }
+  .search-form__input {
+    display: none;
+  }
+  .search-form__icon {
+    top: -10px;
+    right: 14px;
+}
+  .header__center-block {
+    padding-left: 130px;
+  }
+
+  .header__end-block {
+    padding-left: 12px;
+  }
+  .nav-list {
+    display: none;
+  }
+  .header__profile-icon {
+   width: 30px;
+  }
+ }
+
 
 .icon-notification-link {
     position: relative;
@@ -122,7 +159,7 @@ h6 {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    padding-top: 4px;
+    padding-top: 3px;
     text-align:center;
     font-weight: 700;
     font-size: 0.75rem;
@@ -134,7 +171,7 @@ h6 {
 
 .main-container {
   display: flex;
-  padding: 0 30px 0 30px;
+  padding: 0 30px 40px 30px;
   gap: 66px;
 }
 
@@ -143,6 +180,15 @@ h6 {
   flex-direction: column;
   gap: 61px;
 }
+
+@media (max-width: 576px) { 
+  .aside-block{
+    display: none;
+  }
+  .main-container {
+    padding: 0 16px 16px 15px;
+  }
+ }
 
 .main-navigation__list {
   display: flex;
@@ -154,6 +200,8 @@ h6 {
   display: flex;
   align-items: center;
   gap: 14px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .main-navigation__item:first-child {
@@ -170,6 +218,8 @@ h6 {
   display: flex;
   align-items: center;
   gap: 13px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .subscriptions-menu__container {
@@ -193,10 +243,20 @@ h6 {
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .subscriptions-menu__name {
   white-space: nowrap;
+}
+
+.settings-container {
+  display: flex;
+  padding: 44px 0 0 2px;
+  gap: 12px;
+  color: rgb(194, 194, 194);
+  cursor: pointer;
 }
 
 .main-catalog {
@@ -239,6 +299,7 @@ h6 {
 .swiper-arrow {
   width: 28px;
   height: 28px;
+  cursor: pointer;
 }
 
 .user-videos__content {
@@ -273,6 +334,8 @@ h6 {
   max-width: 250px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .user-videos__video-container {
@@ -305,6 +368,25 @@ h6 {
 }
 .user-videos_annotation {
   color: rgb(194, 194, 194);
+}
+.use-videos__subscrube-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 35px;
+  padding: 0 120px 0 0;
+}
+.channel-swiper {
+  display: flex;
+  gap: 10px;
+}
+.use-videos__subscrube-button {
+  background-color: #FF0000;
+  color:#fff;
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 10px 20px;
+  height: 40px;
+  word-wrap: none;
 }
 /* Recommended videos*/
 
@@ -353,6 +435,7 @@ h6 {
   max-width: 540px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .recommended-videos__video-container {
@@ -387,4 +470,70 @@ h6 {
 
 .recommended-videos__author {
   padding: 0 20px 0 0;
+}
+
+@media (max-width: 576px) { 
+  .user-videos {
+    margin: 0 auto;
+  }
+  .user-videos__card {
+    max-width: 288px;
+  }
+  .user-videos__header {
+    display: none;
+  }
+  .user-videos__video-container {
+    width: 288px;
+  }
+  .user-videos__video-image {
+    width: 100%;
+    height: 150px;
+  }
+  .recommended-videos {
+    display: none;
+ }
+ .channel-videos {
+  display: none;
+ }
+}
+.mobile-menu {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  
+}
+.mobile-menu__container {
+  width: 100vw;
+  border-top: 1px solid rgb(241, 241, 241);
+  background-color: #fff;
+  padding: 12px 22px 11px 24px;
+}
+
+.mobile-menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.63rem;
+  gap: 5px;
+  color: rgb(137, 137, 137);
+}
+.mobile-menu__icon {
+  height: 20px;
+}
+.mobile-menu__item:first-child {
+  color:#FF0000;
+}
+.mobile-menu__icon {
+  max-width: fit-content;
+}
+@media (max-width: 576px) { 
+  .mobile-menu {
+    display: block;
+  }
 }
