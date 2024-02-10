@@ -436,7 +436,15 @@ h6 {
     display: none;
   }
 }
-
+@media (max-width: 1440px) { 
+  .profile-section__container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .profile-section__video-container {
+    align-items: center;
+  }
+}
 .profile-section__left-block {
   display: flex;
   flex-direction: column;
@@ -506,6 +514,7 @@ h6 {
 
 .profile-section__image-container {
   position: relative;
+  max-height: 250px;
 }
 
 .profile-section__video-time {
