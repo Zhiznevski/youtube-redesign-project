@@ -371,7 +371,7 @@ h6 {
 }
 .use-videos__subscrube-container {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 35px;
   padding: 0 120px 0 0;
 }
