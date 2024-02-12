@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="channelPage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <title>Channel</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="header__start-block">
+                <div class="burger-menu">
+                    <div class="burger-menu__bar"></div>
+                    <div class="burger-menu__bar"></div>
+                    <div class="burger-menu__bar"></div>
+                </div>
+                <a href="#" class="logo">
+                    <img src="./assets/header/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__center-block">
+                <form class="search-form">
+                    <input class="search-form__input" type="text" placeholder="Search" >
+                    <div class="search-form__icon">
+                        <img src="./assets/header/search.svg" alt="search-icon">
+                    </div>
+                </form>
+
+            </div>
+            <div class="header__end-block">
+                <nav class="header__navigation">
+                 <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <img src="./assets/header/phone-18.svg" alt="navigation-icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <img src="./assets/header/Combined Shape.svg" alt="navigation-icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-notification-link">
+                            <img src="./assets/header/ui-11.svg" alt="navigation-icon">
+                            <div class="icon-notification">3</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                </ul>
+                <div class="header__profile-image">  
+                        <img class="header__profile-icon" src="./assets/header/Userpic.svg" alt="navigation-icon">
+                 </div>
+                </nav>
+
+            </div>
+        </div>
+        <div class="mobile-header__container">
+            <div class="mobile-header__left-block">
+                <a href="#" class="mobile-logo">
+                    <img src="./assets/channelPage/header/mobileLogo.svg" alt="logo">
+                </a>
+                <div class="mobile-header__channel-name">
+                    Margaret Phelps
+                </div>
+            </div>
+            <div class="mobile-header__right-block">
+                <div class="mobile-header__search-container">
+                    <img class="mobile-header__search-icon" src="./assets/channelPage/header/mobileSearch.svg" alt="search icon">
+                </div>
+                <div class="mobile-header__more-button">
+                    <img class="mobile-header__more-icon" src="./assets/channelPage/header/mobileMore.svg" alt="settings icon">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-container container">
+            <aside class="aside-block">
+                <div class="aside-container">
+                    <nav class="main-navigation">
+                        <ul class="main-navigation__list">
+                            <li class="main-navigation__item">
+                                <img src="./assets/aside/navigation/home.svg" alt="navigation-image home" class="main-navigation__image">
+                                <p class="main-navigation__item-name">Home</p>
+                            </li>
+                            <li class="main-navigation__item">
+                                <img src="./assets/aside/navigation/trending.svg" alt="navigation-image trending" class="main-navigation__image">
+                                <p class="main-navigation__item-name">Trending</p>
+                            </li>
+                            <li class="main-navigation__item">
+                                <img src="./assets/aside/navigation/subscriptions.svg" alt="navigation-image subscriptions" class="main-navigation__image">
+                                <p class="main-navigation__item-name">Subscriprions</p>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="navigation-menu">
+                        <ul class="navigation-menu__list">
+                            <li class="navigation-menu__item">
+                                <img src="./assets/aside/navigation/library.svg" alt="navigation-image library" class="navigation-menu__image">
+                                <p class="navigation-menu__item-name">Library</p>
+                            </li>
+                            <li class="navigation-menu__item">
+                                <img src="./assets/aside/navigation/history.svg" alt="navigation-image history" class="navigation-menu__image">
+                                <p class="navigation-menu__item-name">History</p>
+                            </li>
+                            <li class="navigation-menu__item">
+                                <img src="./assets/aside/navigation/watchLater.svg" alt="navigation-image watch later" class="navigation-menu__image">
+                                <p class="navigation-menu__item-name">Watch later</p>
+                            </li>
+                            <li class="navigation-menu__item">
+                                <img src="./assets/aside/navigation/favourites.svg" alt="navigation-image favourites" class="navigation-menu__image">
+                                <p class="navigation-menu__item-name">Favourites</p>
+                            </li>
+                            <li class="navigation-menu__item">
+                                <img src="./assets/aside/navigation/likedVideos.svg" alt="navigation-image liked videos" class="navigation-menu__image">
+                                <p class="navigation-menu__item-name">Liked videos</p>
+                            </li>
+                            <li class="navigation-menu__item">
+                                <img src="./assets/aside/navigation/music.svg" alt="navigation-image music" class="navigation-menu__image">
+                                <p class="navigation-menu__item-name">Music</p>
+                            </li>
+                            <li class="navigation-menu__item">
+                                <img src="./assets/aside/navigation/games.svg" alt="navigation-image games" class="navigation-menu__image">
+                                <p class="navigation-menu__item-name">Games</p>
+                            </li>
+                            <li class="navigation-menu__item">
+                                <img src="./assets/aside/navigation/chevron-down.svg" alt="navigation-image games show more" class="navigation-menu__image">
+                                <p class="navigation-menu__item-name">Show more</p>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="subscriptions-menu__container">
+                        <h3 class="subscriptions-menu__title">Subscriptions</h3>
+                        <ul class="subscriptions-menu__list">
+                            <li class="subscriptions-menu__item">
+                                <img class="subscriptions-menu__icon" src="./assets/aside/subscriptions/sub1.svg" alt="subscriptions-menu profile-icon">
+                                <p class="subscriptions-menu__name">Gussie Singleton</p>
+                            </li>
+                            <li class="subscriptions-menu__item">
+                                <img class="subscriptions-menu__icon" src="./assets/aside/subscriptions/sub2.svg" alt="subscriptions-menu profile-icon">
+                                <p class="subscriptions-menu__name">Nora Francis</p>
+                            </li>
+                            <li class="subscriptions-menu__item">
+                                <img class="subscriptions-menu__icon" src="./assets/aside/subscriptions/sub3.svg" alt="subscriptions-menu profile-icon">
+                                <p class="subscriptions-menu__name">Belle Briggs</p>
+                            </li>
+                            <li class="subscriptions-menu__item">
+                                <img class="subscriptions-menu__icon" src="./assets/aside/subscriptions/sub4.svg" alt="subscriptions-menu profile-icon">
+                                <p class="subscriptions-menu__name">Eunice Cortez</p>
+                            </li>
+                            <li class="subscriptions-menu__item">
+                                <img class="subscriptions-menu__icon" src="./assets/aside/subscriptions/sub5.svg" alt="subscriptions-menu profile-icon">
+                                <p class="subscriptions-menu__name">Emma Hanson</p>
+                            </li>
+                            <li class="subscriptions-menu__item">
+                                <img class="subscriptions-menu__icon" src="./assets/aside/subscriptions/sub6.svg" alt="subscriptions-menu profile-icon">
+                                <p class="subscriptions-menu__name">Leah Berry</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="settings-container">
+                        <img class="settings-icon" src="./assets/aside/settings/settings.svg" alt="settings icon">
+                        <p class="settings-name">Setting</p>
+                    </div>
+                </div>
+            </aside>
+            <div class="main-catalog">
+                <div class="channel-background">
+                    <img class="channel-background__image" src="./assets/channelPage/main-content/channel-back.png" alt="channel background">
+                    <img class="channel-background__mobile-image" src="./assets/channelPage/main-content/mobile-back.png" alt="channel background">
+                </div>
+                <div class="main-content">
+                    <div class="main-content__channel-header">
+                        <div class="channel-header__profile-block">
+                            <div class="channel-header__image-container">
+                                <img class="channel-header__image" src="./assets/channelPage/main-content/channel-image.svg" alt="channel image">
+                            </div>
+                            <div class="channel-header__info-container">
+                                <h3 class="channel-header__profile-name">Margaret Phelps</h3>
+                                <p class="channel-header__subs-count">245K subscribed</p>
+                            </div>
+                        </div>
+                        <div class="channel-header__subscribe-block">
+                            <div class="channel-header__notification-container">
+                                <img class="channel-header__notification-image" src="./assets/channelPage/main-content/noti.svg">
+                            </div>
+                            <div class="channel-header__subscribe-button">Subscribe 2.3m</div>
+
+                        </div>
+                    </div>
+                    <section class="profile-section">
+                        <ul class="profile-section__mobile-navigation-menu">
+                            <li class="profile-section__mobile-navigation-item">Home</li>
+                            <li class="profile-section__mobile-navigation-item">Videos</li>
+                            <li class="profile-section__mobile-navigation-item">Playlists</li>
+                            <li class="profile-section__mobile-navigation-item">
+                                <img class="profile-section__mobile-navigation-icon" src="./assets/channelPage/main-content/Right Arrow.svg" alt="navigation show more">
+                            </li>
+                        </ul>
+                        <div class="profile-section__container">
+                            <div class="profile-section__left-block">
+                                <ul class="profile-section__navigation-menu">
+                                    <li class="profile-section__navigation-item">Home</li>
+                                    <li class="profile-section__navigation-item">Videos</li>
+                                    <li class="profile-section__navigation-item">Playlists</li>
+                                    <li class="profile-section__navigation-item">Channels</li>
+                                    <li class="profile-section__navigation-item">Discussion</li>
+                                    <li class="profile-section__navigation-item">About</li>
+                                    <li class="profile-section__navigation-item">
+                                        <img class="profile-section__navigation-search" src="./assets/channelPage/header/mobileSearch.svg" alt="navigation search">
+                                    </li>
+                                </ul>
+                                <div class="profile-section__video-container">
+                                    <div class="profile-section__image-container">
+                                        <img class="profile-section__video-image"   src="./assets/channelPage/main-content/main-video.png" alt="main video image">
+                                        <div class="profile-section__video-time">7:36</div>
+                                    </div>
+                                    <div class="profile-section__video-info">
+                                        <h3 class="profile-section__video-title">Choosing The Best Audio Player Software For Your Computer</h3>
+                                        <p class="profile-section__video-description">Your cheap internet-based banner advertising will become one of the sought for ads there are. Today, the world of Internet advertising is rapidly evolving beyond banner ads and intrusive pop-ups. Bayles A common medium for advertising on the Internet is the use of banner ads. </p>
+                                        <p class="profile-section__views-count">11k views  ·  6 months ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-section__right-block">
+                                <div class="profile-section__channels-block">
+                                    <p class="profile-section__recommended-channels">Recommended channel</p>
+                                    <ul class="profile-section__channels-list">
+                                        <li class="profile-section__channels-item">
+                                            <img class="profile-section_channel-image" src="./assets/channelPage/main-content/channel1.svg" alt="recommended channel image">
+                                            <p class="profile-section__channe-name">Flora Benson</p>
+                                        </li>
+                                        <li class="profile-section__channels-item">
+                                            <img class="profile-section_channel-image" src="./assets/channelPage/main-content/channel2.svg"  alt="recommended channel image">
+                                            <p class="profile-section__channe-name">Violet Cobb</p>
+                                        </li>
+                                        <li class="profile-section__channels-item">
+                                            <img class="profile-section_channel-image" src="./assets/channelPage/main-content/channel3.svg"  alt="recommended channel image">
+                                            <p class="profile-section__channe-name">Phillip Mullins</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <section class="user-videos">
+                    <div class="user-videos__header">
+                        <h2 class="user-videos__title">Margaret Phelps videos</h2>
+                        <div class="swiper-controls">
+                            <div class="swiper-arrow">
+                                <img src="./assets/main/swiper-arrows/Left.svg" alt="swiper left-arrow">
+                            </div>
+                            <div class="swiper-arrow">
+                                <img src="./assets/main/swiper-arrows/Right.svg" alt="swiper right-arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-videos__content">
+                        <div class="user-videos_cards-container">
+                            <div class="user-videos__card">
+                                <div class="user-videos__video-container">
+                                    <img class="user-videos__video-image" src="./assets/channelPage/main-content/video1.png" alt="user video">
+                                    <div class="user-videos__video-time">7:36</div>
+                                </div>
+                                <h3 class="user-videos__video-title">Astronomy Or Astrology</h3>
+                                <div class="user-videos__info">
+                                    <div class="user-videos__views-count">240k views  ·  4 months ago</div>
+                                    <div class="user-videos__author">Food & Drink</div>
+                                </div>
+                            </div>
+                            <div class="user-videos__card">
+                                <div class="user-videos__video-container">
+                                    <img class="user-videos__video-image" src="./assets/channelPage/main-content/video2.png" alt="user video">
+                                    <div class="user-videos__video-time">2:19</div>
+                                </div>
+                                <h3 class="user-videos__video-title">Advertising Outdoors</h3>
+                                <div class="user-videos__info">
+                                    <div class="user-videos__views-count">13k views  ·  15 days ago</div>
+                                    <div class="user-videos__author">Food & Drink</div>
+                                </div>
+                            </div>
+                            <div class="user-videos__card">
+                                <div class="user-videos__video-container">
+                                    <img class="user-videos__video-image" src="./assets/channelPage/main-content/video3.png" alt="user video">
+                                    <div class="user-videos__video-time">9:05</div>
+                                </div>
+                                <h3 class="user-videos__video-title">Radio Astronomy</h3>
+                                <div class="user-videos__info">
+                                    <div class="user-videos__views-count">1k views  ·  11 months ago</div>
+                                    <div class="user-videos__author">Food & Drink</div>
+                                </div>
+                            </div>
+                            <div class="user-videos__card">
+                                <div class="user-videos__video-container">
+                                    <img class="user-videos__video-image" src="./assets/channelPage/main-content/video4.png" alt="user video">
+                                    <div class="user-videos__video-time">3:40</div>
+                                </div>
+                                <h3 class="user-videos__video-title">A Good Autoresponder</h3>
+                                <div class="user-videos__info">
+                                    <div class="user-videos__views-count">45k views  ·  2 months ago</div>
+                                    <div class="user-videos__author">Food & Drink</div>
+                                </div>
+                            </div>
+                            <div class="user-videos__card">
+                                <div class="user-videos__video-container">
+                                    <img class="user-videos__video-image" src="./assets/channelPage/main-content/video5.png" alt="user video">
+                                    <div class="user-videos__video-time">1:56</div>
+                                </div>
+                                <h3 class="user-videos__video-title">Baby Monitor Technology</h3>
+                                <div class="user-videos__info">
+                                    <div class="user-videos__views-count">86k views  ·  7 days ago</div>
+                                    <div class="user-videos__author">Food & Drink</div>
+                                </div>
+                            </div>
+                            <div class="user-videos__card">
+                                <div class="user-videos__video-container">
+                                    <img class="user-videos__video-image" src="./assets/channelPage/main-content/video6.png" alt="user video">
+                                    <div class="user-videos__video-time">4:15</div>
+                                </div>
+                                <h3 class="user-videos__video-title">Asteroids</h3>
+                                <div class="user-videos__info">
+                                    <div class="user-videos__views-count">123k views  ·  4 months ago</div>
+                                    <div class="user-videos__author">Food & Drink</div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                </div>
+        </div>
+    </main>
+    <nav class="mobile-menu">
+        <div class="mobile-menu__container">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <img class="mobile-menu__icon" src="./assets/channelPage/main-content/homeIcon.svg" alt="mobile-menu icon">
+                    <p class="mobile-menu__name">Home</p>
+                </li>
+                <li class="mobile-menu__item">
+                    <img class="mobile-menu__icon" src="./assets/aside/navigation/trending.svg" alt="mobile-menu icon">
+                    <p class="mobile-menu__name">Trending</p>
+                </li>
+                <li class="mobile-menu__item">
+                    <img class="mobile-menu__icon" src="./assets/aside/navigation/subscriptions.svg" alt="mobile-menu icon">
+                    <p class="mobile-menu__name">Subscriptions</p>
+                </li>
+                <li class="mobile-menu__item">
+                    <img class="mobile-menu__icon" src="./assets/aside/navigation/library.svg" alt="mobile-menu icon">
+                    <p class="mobile-menu__name">Library</p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
