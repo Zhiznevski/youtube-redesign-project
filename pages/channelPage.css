@@ -208,7 +208,7 @@ h6 {
 
 @media (max-width: 750px) { 
   .aside-block {
-    width: 30%;
+    display: none;
   }
 }
 .aside-container {
@@ -327,7 +327,7 @@ h6 {
 
 @media (max-width: 750px) { 
   .main-catalog {
-    width: 70%;
+    width: 100%;
   }
 }
 
