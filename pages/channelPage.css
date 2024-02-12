@@ -54,6 +54,11 @@ h6 {
     padding: 20px 70px 30px 30px;
 }
 
+@media (max-width: 840px) { 
+  .header-container {
+    padding: 20px 20px 30px 30px;
+}
+}
 .header__start-block {
     display: flex;
     gap: 28px;
@@ -74,8 +79,8 @@ h6 {
 }
 
 .header__center-block {
-    padding-left: 59px;
-    flex: 0 1 889px;
+    flex: 0 1 830px;
+    margin: 0 30px 0 59px;
 }
 
 .search-form {
@@ -86,6 +91,7 @@ h6 {
     width: 100%;
     height: 44px;
     padding: 12px 23px;
+    margin: 0 10px 0 0;
     background-color: rgba(235,235,235, 0.3);
     border-radius: 20px;
     font-size: 1rem;
@@ -100,8 +106,8 @@ h6 {
 }
 
 .header__end-block {
+    margin: 0 0 0 auto;
     display: flex;
-    flex: 0 1 765px;
     justify-content: flex-end;
 }
 .header__navigation {
@@ -183,10 +189,28 @@ h6 {
 
 .main-container {
   display: flex;
-  padding: 0 30px 40px 30px;
-  gap: 66px;
+  padding: 0 0 30px 30px;
+}
+.aside-block {
+  width: 12%;
+}
+@media (max-width: 1450px) { 
+  .aside-block {
+    width: 20%;
+  }
 }
 
+@media (max-width: 950px) { 
+  .aside-block {
+    width: 25%;
+  }
+}
+
+@media (max-width: 750px) { 
+  .aside-block {
+    width: 30%;
+  }
+}
 .aside-container {
   display: flex;
   flex-direction: column;
@@ -284,15 +308,35 @@ h6 {
 }
 
 .main-catalog {
+  width: 88%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1450px) { 
+  .main-catalog {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 950px) { 
+  .main-catalog {
+    width: 75%;
+  }
+}
+
+@media (max-width: 750px) { 
+  .main-catalog {
+    width: 70%;
+  }
 }
 
 @media (max-width: 576px) { 
   .main-catalog {
+    width: auto;
     margin: 0 auto;
   }
-
+  
 }
 .mobile-menu {
   display: none;
@@ -335,11 +379,11 @@ h6 {
 }
 
 .main-content {
-  max-width: 1595px;
+  padding: 0 70px 0 0;
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 576px) { 
+@media (max-width: 950px) { 
   .main-content {
     padding: 0 16px;
   }
@@ -351,6 +395,12 @@ h6 {
   padding: 30px 0 0 0;
 }
 
+@media (max-width: 750px) { 
+  .main-content__channel-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
 .channel-header__profile-block {
   display: flex;
@@ -388,6 +438,7 @@ h6 {
   border-radius: 20px;
   padding: 10px 20px;
   height: 40px;
+  text-wrap: nowrap;
 }
 
 @media (max-width: 576px) { 
@@ -429,7 +480,7 @@ h6 {
 .profile-section__container {
   display: flex;
   padding: 20px 0 0 0;
-  gap: 204px;
+  gap: 13%;
 }
 @media (max-width: 576px) { 
   .profile-section__container {
@@ -443,6 +494,14 @@ h6 {
   }
   .profile-section__video-container {
     align-items: center;
+  }
+}
+@media (max-width: 950px) { 
+  .profile-section__container {
+    .profile-section__video-container{
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 }
 .profile-section__left-block {
@@ -486,12 +545,16 @@ h6 {
 }
 .profile-section__navigation-menu {
   display: flex;
-  gap: 70px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  column-gap: 6%;
 }
+
 .profile-section__navigation-item {
   cursor: pointer;
   font-size: 1.13rem;
 }
+
 .profile-section__navigation-item:first-child {
   position: relative;
   color: #FF0000;
@@ -515,6 +578,10 @@ h6 {
 .profile-section__image-container {
   position: relative;
   max-height: 250px;
+}
+
+.profile-section__video-image {
+  width: 100%;
 }
 
 .profile-section__video-time {
@@ -624,32 +691,22 @@ h6 {
 }
 
 .user-videos__content {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  overflow: hidden;
+}
+.user-videos_cards-container {
+  display: flex;
+  gap: 20px;
 }
 
-@media (max-width: 1800px) { 
- .user-videos__content {
-  gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
- } 
-}
- @media (max-width: 1200px) { 
-  .user-videos__content {
-   grid-template-columns: repeat(3, 1fr);
+
+ @media (max-width: 576px) { 
+  .user-videos_cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   } 
- }
- @media (max-width: 1000px) { 
-  .user-videos__content {
-   grid-template-columns: repeat(2, 1fr);
-  } 
- }
- @media (max-width: 600px) { 
-  .user-videos__content {
-   gap: 30px;
-   grid-template-columns: repeat(1, 1fr);
-  } 
-}
+  
+} 
 
 .user-videos__card {
   max-width: 250px;
